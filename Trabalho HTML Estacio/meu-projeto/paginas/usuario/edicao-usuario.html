@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Usuário - Controle de Estoque</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <script src="../../global.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Controle de Estoque - Hardware & Periféricos</h1>
+        <hr>
+    </header>
+    <table border="0" width="100%">
+        <tr>
+            <td valign="top" width="220">
+                <nav>
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="../produto/produtos.html">Produtos / Estoque</a></li>
+                        <li><a href="../produto/cadastro-produtos.html">Cadastrar Produto</a></li>
+                        <li><a href="../produto/edicao-produtos.html">Editar Produto</a></li>
+                        <li><a href="../cadastro-categoria/cadastro-categoria.html">Cadastrar Categoria</a></li>
+                        <li><a href="usuarios.html">Controle de Usuários</a></li>
+                        <li><a href="../../index.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </td>
+            <td valign="top">
+                <main>
+                    <h2>Edição de Usuário</h2>
+                    <form class="formulario-edicao" action="usuarios.html" method="get">
+                        <p>
+                            <label for="nome_user">Nome Completo:</label>
+                            <input type="text" id="nome_user" name="nome_user" value="João Silva" required>
+                        </p>
+                        <p>
+                            <label for="email_user">E-mail:</label>
+                            <input type="email" id="email_user" name="email_user" value="joao@loja.com" required>
+                        </p>
+                        <p>
+                            <label for="nivel">Nível de Permissão:</label>
+                            <select id="nivel" name="nivel">
+                                <option value="operador" selected>Operador de Estoque</option>
+                                <option value="admin">Administrador</option>
+                            </select>
+                        </p>
+                        <p>
+                            <button type="submit">Salvar Alterações</button>
+                        </p>
+                    </form>
+                </main>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Loja de Hardware - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

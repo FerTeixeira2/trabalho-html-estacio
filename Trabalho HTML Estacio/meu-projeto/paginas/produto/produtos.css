@@ -1,0 +1,124 @@
+main h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+table.tabela-dados {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    color: #263445;
+    background-color: #fff;
+}
+
+table.tabela-dados th, table.tabela-dados td {
+    border-bottom: 1px solid #d9e0e8;
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table.tabela-dados th {
+    background-color: #e9eff4;
+    color: #25364a;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+table.tabela-dados tbody tr:nth-child(even) {
+    background-color: #f7f9fb;
+}
+
+table.tabela-dados tbody tr:hover {
+    background-color: #edf4f6;
+}
+
+table.tabela-dados tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+table.tabela-dados img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.tabela-scroll {
+    max-width: 1080px;
+    margin: 14px 0 24px;
+    overflow-x: auto;
+    border: 1px solid #d9e0e8;
+    border-radius: 6px;
+}
+
+main form {
+    width: min(100%, 640px);
+    margin-top: 20px;
+}
+
+main form p {
+    margin-bottom: 18px;
+}
+
+main form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-weight: 600;
+}
+
+main form input,
+main form select {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #fff;
+    color: #263445;
+    font: inherit;
+}
+
+main form input:focus,
+main form select:focus {
+    border-color: #2563eb;
+    outline: 3px solid rgba(37, 99, 235, 0.15);
+}
+
+main form button {
+    min-height: 40px;
+    margin-right: 8px;
+    padding: 9px 15px;
+    border: 0;
+    border-radius: 4px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+main form button:hover {
+    background: #1d4ed8;
+}
+
+main form button[type="reset"] {
+    background: #e8edf2;
+    color: #263445;
+}
+
+main form button[type="reset"]:hover {
+    background: #dce4eb;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 18px;
+    }
+
+    table.tabela-dados th,
+    table.tabela-dados td {
+        padding: 10px 12px;
+    }
+}

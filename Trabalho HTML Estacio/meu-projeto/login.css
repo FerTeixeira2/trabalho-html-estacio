@@ -1,0 +1,72 @@
+.pagina-login {
+    background: #edf1f5;
+}
+
+.pagina-login header {
+    padding: 24px 20px;
+}
+
+.login-panel {
+    flex: 0 1 auto;
+    width: min(100% - 32px, 460px);
+    margin: clamp(32px, 8vh, 72px) auto;
+    padding: 34px 36px 38px;
+    border-top: 4px solid #0f766e;
+}
+
+.login-panel h2 {
+    margin-bottom: 26px;
+    color: #1e293b;
+    font-size: 1.55rem;
+}
+
+.login-form p {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #fff;
+    color: #263445;
+    font: inherit;
+}
+
+.login-form input:focus {
+    border-color: #0f766e;
+    outline: 3px solid rgba(15, 118, 110, 0.15);
+}
+
+.login-form button {
+    width: 100%;
+    min-height: 46px;
+    border: 0;
+    border-radius: 4px;
+    background: #0f766e;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background-color 160ms ease;
+}
+
+.login-form button:hover {
+    background: #115e59;
+}
+
+@media (max-width: 520px) {
+    .login-panel {
+        padding: 26px 22px 28px;
+    }
+}
